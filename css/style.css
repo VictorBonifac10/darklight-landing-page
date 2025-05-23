@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+    padding: 10px;
+    align-items: center;
+}
+
+.link-top-header{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3c3c54;
+}
+
+#top-log{
+   display: flex;
+   align-items: center;
+}
+
+#logo{
+    width: 60px;
+    filter: invert(32%) sepia(83%) saturate(941%) hue-rotate(241deg) brightness(95%) contrast(98%);
+}
+
+#name{
+    font-size: 20px;
+    font-weight: 750;
+    color: #3c3c54;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin: 30px 30px 10px 30px;
+    padding: 10px;
+}
+
+#img-darklight{
+    width: 370px;
+    margin-left: 110px;
+}
+
+#title{
+    font-size: 42px;
+    margin-bottom: 7px;
+    color: #a36bf3;
+}
+
+#subtitle{
+    margin-bottom: 15px;
+    color: #3c3c54;
+    font-size: 22px;
+}
+
+#paragraph{
+    color: #3c3c54;
+    margin-top: 30px;
+    max-width: 510px;
+}
+
+#social-midia{
+    margin-top: 20px;
+    display: flex;
+}
+
+.box{
+    display: flex;
+    background: #a36bf3;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icon-social-midia{
+    width: 22px;
+    filter: invert(18%) sepia(12%) saturate(1112%) hue-rotate(197deg) brightness(91%) contrast(92%);
+    cursor: pointer;
+}
+
+.box:hover{
+    background: #b77fff;
+}
