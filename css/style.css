@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    overflow: hidden;
 }
 
 header{
@@ -21,6 +22,11 @@ header{
     font-size: 20px;
     font-weight: 600;
     color: #3c3c54;
+    transition: 0.1s;
+}
+
+.link-top-header:hover{
+    color: #a36bf3;
 }
 
 #top-log{
@@ -30,13 +36,24 @@ header{
 
 #logo{
     width: 60px;
-    filter: invert(32%) sepia(83%) saturate(941%) hue-rotate(241deg) brightness(95%) contrast(98%);
 }
 
 #name{
     font-size: 20px;
     font-weight: 750;
     color: #3c3c54;
+}
+
+#dark-light{
+    font-size: 15px;
+    font-weight: 400;
+    color: #3c3c54;
+    padding: 10px;
+    width: 125px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1.5px solid #a36bf3;
+    cursor: pointer;
 }
 
 main{
@@ -47,7 +64,8 @@ main{
 }
 
 #img-darklight{
-    width: 370px;
+    width: 370px;     /* defina um tamanho fixo */
+    height: 370px;     /* mantém a proporção original */
     margin-left: 110px;
 }
 
@@ -95,4 +113,54 @@ main{
 
 .box:hover{
     background: #b77fff;
+}
+
+body,
+#name,
+.link-top-header,
+p,
+#subtitle,
+#title,
+.box {
+  transition: color 0.3s ease, background-color 0.2s ease;
+}
+
+@media screen  and (max-width: 800px){
+
+    main{
+        display: block;
+    }
+
+    #img-darklight{
+        display: block;
+        margin: 0px auto;
+
+        margin-top: 40px;
+    }
+
+    #paragraph{
+        display: block;
+        margin: 0px auto;
+    }
+
+    #title, #subtitle, #paragraph{
+        text-align: center;
+    }
+
+    #social-midia{
+        display: flex;
+        justify-content: center;
+    }
+
+    .link-top-header{
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 430px){
+
+    #img-darklight{
+        width: 280px; 
+        height: 280px;
+    }
 }
